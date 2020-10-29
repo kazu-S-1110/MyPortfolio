@@ -1,8 +1,10 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Header from "../components/Header"
-import Main from '../components/Main'
+import Skills from '../components/Skills'
 import Top from "../components/Top"
+import Prof from "../components/Prof"
+import Links from "../components/Links"
 
 export default function Home() {
   return (
@@ -13,8 +15,10 @@ export default function Home() {
       </Head> 
       
       <Header />
-      <Top/>
-      <Main/>
+      <Top />
+      <Prof />
+      <Skills />
+      <Links />
       <footer className={styles.footer}>
       </footer>
     </div>
