@@ -1,6 +1,5 @@
 import { Fragment } from 'react';
 import styled from 'styled-components';
-import NextLink from 'next/link';
 
 export default () => {
   return (
