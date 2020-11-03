@@ -7,6 +7,7 @@ export default () => {
       <Div>
         <h1>Links</h1>
         <A href="https://github.com/kazu-S-1110">My-github-repo</A>
+        <A href="https://chat-demo-kazu.web.app/">My-chat-app</A>
       </Div>
     </>
   );
@@ -30,6 +31,7 @@ const Div = styled.div`
 
 const A = styled.a`
   font-size: 30px;
+  margin-top: 20px;
   font-weight: bold;
   :hover {
     text-decoration: underline;
