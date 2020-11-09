@@ -22,6 +22,7 @@ const Con = styled.div`
   background-image: url('/pc.jpg');
   background-color: rgba(255, 255, 255, 0.6);
   background-blend-mode: lighten;
+  background-size: cover;
   width: 100%;
   height: 400px;
   justify-content: center;
