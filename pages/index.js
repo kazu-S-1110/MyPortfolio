@@ -3,7 +3,7 @@ import styles from '../styles/Home.module.css';
 import Header from '../components/Header';
 import Skills from '../components/Skills';
 import Top from '../components/Top';
-import Prof from '../components/Prof';
+import Prof from '../components/Prof/Prof';
 import Listlink from '../components/Listlink';
 
 export default function Home() {

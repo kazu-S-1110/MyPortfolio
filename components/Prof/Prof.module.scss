@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+.section {
+  font-family: 'Poppins';
+  position: relative;
+  width: 100%;
+  height: 25vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  @media screen and(max-width:750px) {
+    height: auto;
+  }
+
+  .wave {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #4973ff;
+    span {
+      position: absolute;
+      width: 90vh;
+      height: 90vh;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -75%);
+      background-color: rgb(53, 50, 50);
+    }
+    span:nth-child(1) {
+      animation: animate 5s linear infinite;
+      border-radius: 45%;
+      background-color: rgba($color: #581a1a, $alpha: 1);
+    }
+    span:nth-child(2) {
+      animation: animate 10s linear infinite;
+      border-radius: 40%;
+      background-color: rgba($color: #459fc2, $alpha: 0.5);
+    }
+    span:nth-child(3) {
+      animation: animate 15s linear infinite;
+      border-radius: 42.5%;
+      background-color: rgba($color: #3b3db1, $alpha: 0.5);
+    }
+  }
+  @keyframes animate {
+    0% {
+      transform: translate(-50%, -75%) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -75%) rotate(360deg);
+    }
+  }
+
+  .content {
+    position: relative;
+    z-index: 1;
+  }
+  p {
+    color: white;
+  }
+}
