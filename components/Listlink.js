@@ -7,7 +7,7 @@ export default () => {
       <Div>
         <h1>Links</h1>
         <A href="https://github.com/kazu-S-1110">My-github-repo</A>
-        <A href="https://chat-demo-kazu.web.app/">Chat-app</A>
+        <A href="https://chat-demo-kazu0.web.app/">Chat-app</A>
         <A href="https://react-hooks-practice.vercel.app/">Todo-app</A>
       </Div>
     </>
