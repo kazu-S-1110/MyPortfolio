@@ -1,48 +1,50 @@
-import { Button, Image } from '@chakra-ui/react';
+import { Image, Grid } from '@chakra-ui/react';
 import styled from 'styled-components';
 
-export default () => {
+export const Skills = () => {
   return (
     <Div>
       <h1>
         My Skills<span>（Not master）</span>
       </h1>
-      <Ul>
+      <Grid templateColumns="repeat(6, 1fr)" gap={6}>
         <Image
-          borderRadius="full"
+          justifySelf="center"
           boxSize="150px"
           src="./react.svg"
           alt="react"
         />
-        <Li>
-          React Hooks <Img src="/hooks.svg" />
-        </Li>
-        <Li>
-          React Redux <Img src="/redux.svg" />
-        </Li>
-        <Li>
-          Next.js <Img src="/nextjs-3.svg" />
-        </Li>
-        <Li>
-          JavaScript <Img src="/javascript.svg" />
-        </Li>
-        <Li>
-          Firebase <Img src="/firebase-1.svg" />
-        </Li>
-        <Li>
-          AWS <Img src="/aws-logo.svg" />
-        </Li>
-        <Li>
-          Styled components <Img src="/styled.png" />
-        </Li>
-        <Li>
-          TypeScript <Img src="/typescript.svg" />
-        </Li>
-        <Li>
-          Python <Img src="/python-4.svg" />
-        </Li>
-        <Button>button</Button>
-      </Ul>
+        <Image
+          justifySelf="center"
+          boxSize="150px"
+          src="./aws-logo.svg"
+          alt="react"
+        />
+        <Image
+          justifySelf="center"
+          boxSize="150px"
+          src="./javascript.svg"
+          alt="react"
+        />
+        <Image
+          justifySelf="center"
+          boxSize="150px"
+          src="./typescript.svg"
+          alt="react"
+        />
+        <Image
+          justifySelf="center"
+          boxSize="150px"
+          src="./nextjs-3.svg"
+          alt="react"
+        />
+        <Image
+          justifySelf="center"
+          boxSize="150px"
+          src="./redux.svg"
+          alt="react"
+        />
+      </Grid>
     </Div>
   );
 };
