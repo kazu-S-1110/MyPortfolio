@@ -5,8 +5,10 @@ import { Skills } from '../components/Skills';
 import Top from '../components/Top';
 import Prof from '../components/Prof/Prof';
 import Listlink from '../components/Listlink';
+import { fetchEntries } from '../lib/contentful';
 
-export default function Home() {
+export default function Home({ skills }) {
+  console.log(skills);
   return (
     <div className={styles.container}>
       <Head>
@@ -23,3 +25,13 @@ export default function Home() {
     </div>
   );
 }
+
+export const getStaticProps = async () => {
+  const res = await fetchEntries();
+  console.log(res);
+  return {
+    props: {
+      skills: res,
+    },
+  };
+};

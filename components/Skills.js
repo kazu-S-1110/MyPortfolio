@@ -1,5 +1,6 @@
 import { Image, Grid } from '@chakra-ui/react';
 import styled from 'styled-components';
+import { fetchEntries } from '../lib/contentful';
 
 export const Skills = () => {
   return (
@@ -7,7 +8,7 @@ export const Skills = () => {
       <h1>
         My Skills<span>（Not master）</span>
       </h1>
-      <Grid templateColumns="repeat(6, 1fr)" gap={6}>
+      <Grid templateColumns="repeat(7, 1fr)" gap={6}>
         <Image
           justifySelf="center"
           boxSize="150px"
@@ -58,34 +59,4 @@ const Div = styled.div`
       font-size: 10px;
     }
   }
-`;
-
-const Ul = styled.div`
-  font-size: 25px;
-  height: auto;
-  display: flex;
-  list-style: none;
-  flex-direction: row;
-  flex-wrap: wrap;
-`;
-
-const Li = styled.div`
-  text-align: center;
-  width: 100px;
-  height: 130px;
-  display: flex;
-  margin: 20px;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  transition: opacity 0.3s;
-  :hover {
-    opacity: 0.5;
-    background-color: blue;
-  }
-`;
-
-const Img = styled.img`
-  width: 90px;
-  height: 70px;
 `;
