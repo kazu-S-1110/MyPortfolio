@@ -1,4 +1,4 @@
-import { Image, Grid } from '@chakra-ui/react';
+import { Image, Grid, Flex } from '@chakra-ui/react';
 import styled from 'styled-components';
 import { fetchEntries } from '../lib/contentful';
 
@@ -13,15 +13,15 @@ export const Skills = ({ skills }) => {
         {skills.map((skill) => {
           console.log(skill.fields.skillImage.fields.file.url);
           return (
-            <>
-              {/* <h2>{skill.fields.skillName}</h2> */}
+            <Flex direction="column" alignItems="center">
+              <h2>{skill.fields.skillName}</h2>
               <Image
                 justifySelf="center"
                 boxSize="150px"
                 src={`http:${skill.fields.skillImage.fields.file.url}`}
                 alt={skill.fields.skillName}
               />
-            </>
+            </Flex>
           );
         })}
       </Grid>
