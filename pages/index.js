@@ -8,7 +8,7 @@ import Listlink from '../components/Listlink';
 import { fetchEntries } from '../lib/contentful';
 
 export default function Home({ skills }) {
-  console.log(skills);
+  // console.log(skills);
   return (
     <div className={styles.container}>
       <Head>
@@ -19,7 +19,7 @@ export default function Home({ skills }) {
       <Header />
       <Top />
       <Prof />
-      <Skills />
+      <Skills skills={skills} />
       <Listlink />
       <footer className={styles.footer}></footer>
     </div>
@@ -27,10 +27,11 @@ export default function Home({ skills }) {
 }
 
 export const getStaticProps = async () => {
-  const res = await fetchEntries();
+  const skills = await fetchEntries();
+  // console.log(skills);
   return {
     props: {
-      skills: res,
+      skills,
     },
   };
 };
