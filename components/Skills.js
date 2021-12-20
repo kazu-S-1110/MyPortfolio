@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Skill } from './Skill';
 
 export const Skills = ({ skills }) => {
-  console.log(skills);
+  // console.log(skills);
   return (
     <Div>
       <h1>
@@ -12,8 +12,8 @@ export const Skills = ({ skills }) => {
       <Grid templateColumns="repeat(7, 1fr)" gap={6}>
         {skills.map((skill) => {
           return (
-            <Flex direction="column" alignItems="center">
-              <Skill skill={skill} key={skill.sys.id} />
+            <Flex direction="column" alignItems="center" key={skill.sys.id}>
+              <Skill skill={skill} />
             </Flex>
           );
         })}
