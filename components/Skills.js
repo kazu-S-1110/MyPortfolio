@@ -9,7 +9,10 @@ export const Skills = ({ skills }) => {
       <h1>
         My Skills<span>（Not master）</span>
       </h1>
-      <Grid templateColumns="repeat(7, 1fr)" gap={6}>
+      <Grid
+        templateColumns={{ base: 'repeat(2, 1fr)', md: 'repeat(7, 1fr)' }}
+        gap={6}
+      >
         {skills.map((skill) => {
           return (
             <Flex direction="column" alignItems="center" key={skill.sys.id}>
