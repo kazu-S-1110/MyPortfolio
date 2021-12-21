@@ -1,11 +1,17 @@
-import { Collapse, Image, useDisclosure } from '@chakra-ui/react';
+import { Collapse, Image, Text, useDisclosure } from '@chakra-ui/react';
 
 export const Skill = ({ skill }) => {
   const { isOpen, onToggle } = useDisclosure();
 
   return (
     <>
-      <h2>{skill.fields.skillName}</h2>
+      <Text
+        fontSize={{ base: 'lg', md: 'xl' }}
+        fontWeight={{ base: '300', md: '600' }}
+        fontFamily={'sans-serif'}
+      >
+        {skill.fields.skillName}
+      </Text>
       <Image
         key="skill.fields.skillName"
         justifySelf="center"

@@ -1,4 +1,4 @@
-import { Grid, Flex } from '@chakra-ui/react';
+import { Grid, Flex, Text } from '@chakra-ui/react';
 import styled from 'styled-components';
 import { Skill } from './Skill';
 
@@ -6,9 +6,13 @@ export const Skills = ({ skills }) => {
   // console.log(skills);
   return (
     <Div>
-      <h1>
+      <Text
+        textAlign="center"
+        fontSize={{ base: '2em', md: '30px' }}
+        fontWeight={{ base: '400', md: '500' }}
+      >
         My Skills<span>（Not master）</span>
-      </h1>
+      </Text>
       <Grid
         templateColumns={{ base: 'repeat(2, 1fr)', md: 'repeat(7, 1fr)' }}
         gap={6}
@@ -26,12 +30,5 @@ export const Skills = ({ skills }) => {
 };
 
 const Div = styled.div`
-  outline: blue solid 3px;
   width: 100%;
-  h1 {
-    text-align: center;
-    span {
-      font-size: 10px;
-    }
-  }
 `;
