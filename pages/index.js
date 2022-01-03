@@ -26,9 +26,9 @@ export default function Home({ skills }) {
   );
 }
 
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
   const skills = await fetchEntries();
-  // console.log(skills);
+  console.log(skills);
   return {
     props: {
       skills,

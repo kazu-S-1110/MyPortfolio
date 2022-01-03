@@ -17,7 +17,7 @@ export const Skills = ({ skills }) => {
         templateColumns={{ base: 'repeat(2, 1fr)', md: 'repeat(7, 1fr)' }}
         gap={6}
       >
-        {skills.map((skill) => {
+        {skills?.map((skill) => {
           return (
             <Flex direction="column" alignItems="center" key={skill.sys.id}>
               <Skill skill={skill} />
