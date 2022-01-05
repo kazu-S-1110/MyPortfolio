@@ -1,21 +1,32 @@
+import { Box, Spacer } from '@chakra-ui/react';
 import styled from 'styled-components';
+import { Icon } from './Icon';
 
-export default () => {
+export const Header = () => {
   return (
-    <Header>
+    <Head>
       <Title>My Portfolio</Title>
-    </Header>
+      <Box h="3vh">
+        <Icon
+          src="./github-icon-1.svg"
+          link="https://github.com/kazu-S-1110/"
+        />
+      </Box>
+    </Head>
   );
 };
 
-const Header = styled.div`
+const Head = styled.div`
   width: 100%;
   background-color: blue;
   background-image: linear-gradient(62deg, blue 0%, #6df7e7 60%);
   top: 0;
   z-index: 5;
+  justify-content: space-between;
   position: fixed;
-  text-align: center;
+  display: flex;
+
+  flex-direction: row;
   @media screen and (max-width: 690px) {
     height: auto;
   }

@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
-import Header from '../components/Header';
+import { Header } from '../components/Header';
 import { Skills } from '../components/Skills';
 import Top from '../components/Top';
 import Prof from '../components/Prof/Prof';
@@ -15,17 +15,19 @@ const ReactGitHubCalendar = dynamic(() => import('react-ts-github-calendar'), {
 export default function Home({ skills }) {
   return (
     <div className={styles.container}>
-      <Head>
+      <Header>
         <title>My Portfolio</title>
         <link rel="icon" href="/desktop-computer_1f5a5.png" />
-      </Head>
+      </Header>
 
       <Header />
       <Top />
       <Prof />
       <Skills skills={skills} />
       <ListLink />
+
       <ReactGitHubCalendar userName="kazu-s-1110" responsive />
+
       <footer className={styles.footer}></footer>
     </div>
   );
