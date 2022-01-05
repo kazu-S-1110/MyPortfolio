@@ -13,6 +13,8 @@ const Header = styled.div`
   background-color: blue;
   background-image: linear-gradient(62deg, blue 0%, #6df7e7 60%);
   top: 0;
+  z-index: 5;
+  position: fixed;
   text-align: center;
   @media screen and (max-width: 690px) {
     height: auto;

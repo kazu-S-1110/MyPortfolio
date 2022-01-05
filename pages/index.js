@@ -25,7 +25,7 @@ export default function Home({ skills }) {
       <Prof />
       <Skills skills={skills} />
       <ListLink />
-      <ReactGitHubCalendar userName="kazu-s-1110" />
+      <ReactGitHubCalendar userName="kazu-s-1110" responsive />
       <footer className={styles.footer}></footer>
     </div>
   );
