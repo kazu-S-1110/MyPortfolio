@@ -1,16 +1,27 @@
-import { Box, Spacer } from '@chakra-ui/react';
+import { Box, Image, Link, Spacer } from '@chakra-ui/react';
 import styled from 'styled-components';
-import { Icon } from './Icon';
 
 export const Header = () => {
   return (
     <Head>
       <Title>My Portfolio</Title>
-      <Box h="3vh">
-        <Icon
-          src="./github-icon-1.svg"
-          link="https://github.com/kazu-S-1110/"
-        />
+      <Box
+        h={{ base: '5vh', md: '6vh' }}
+        w="14vw"
+        alignSelf="center"
+        alignItems="center"
+        display="flex"
+        justifyContent="center"
+        justifyItems="center"
+        min-height="17px"
+        max-height="27px"
+      >
+        <Link href="https://github.com/kazu-S-1110/" isExternal>
+          <Image src="./github-icon-1.svg" boxSize="40px" m="2px" />
+        </Link>
+        <Link href="https://twitter.com/posekaz61110" isExternal>
+          <Image src="./Logo blue.svg" boxSize="40px" m="2px" />
+        </Link>
       </Box>
     </Head>
   );
