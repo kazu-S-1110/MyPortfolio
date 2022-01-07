@@ -11,15 +11,15 @@ const Prof = () => {
           <br />
           生まれ：1994年
           <br />
-          公立大学中退後、東京のSESにてインフラエンジニアとして勤務（死活監視業務、サーバ構築業務を経験）
+          公立大学中退後、東京のSESにてインフラエンジニアとして勤務。
           <br />
           その後、母親の危篤により地元茨城へ戻り、複数のアルバイト業務に携わる。
           <br />
           2020年8月頃Reactを知り、勉強開始。
           <br />
-          2021年より某自治体のIT支援員として勤務。（≒社内エンジニア、PowerShellやCmdで自動化に成功）
+          2021年より某自治体のIT支援員として勤務。（≒社内エンジニア。業務自動化や無線環境整備など）
           <br />
-          趣味は武道（空手と少林寺拳法は有段）やアニメやガジェット（主にApple）
+          趣味は少林寺拳法やアニメやガジェットなど
         </p>
       </Cont>
       <div className={Style.wave}>
@@ -39,8 +39,10 @@ const Cont = styled.div`
   justify-content: space-evenly;
   align-items: center;
   padding: 50px;
+
   font-size: 17px;
   z-index: 3;
+
   p {
     color: white;
   }
@@ -51,6 +53,7 @@ const Cont = styled.div`
     font-size: 17px;
     padding: 5px 20px;
     line-height: 1.7;
+    margin-bottom: 20px;
   }
 `;
 

@@ -20,7 +20,8 @@ export default function Home({ skills }) {
       <Top />
       <Prof />
       <Skills skills={skills} />
-      <ListLink />
+
+      {/* <ListLink /> */}
       <GithubCal />
     </div>
   );

@@ -6,12 +6,11 @@ export const ListLink = () => {
     <>
       <Div>
         <h1>Links</h1>
-        <A href="https://github.com/kazu-S-1110">My-github-repo</A>
         <A href="https://react-hooks-practice.vercel.app/">Todo-app</A>
-        <object
+        {/* <object
           type="image/svg+xml"
           data="https://gh-card.dev/repos/kazu-S-1110/react-farm_211217.svg?link_target=_blank"
-        ></object>
+        ></object> */}
       </Div>
     </>
   );

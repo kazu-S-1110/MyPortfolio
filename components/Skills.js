@@ -32,4 +32,5 @@ export const Skills = ({ skills }) => {
 
 const Div = styled.div`
   width: 100%;
+  border-bottom: 1px solid blue;
 `;
