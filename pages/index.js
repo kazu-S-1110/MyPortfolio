@@ -6,11 +6,7 @@ import Top from '../components/Top';
 import Prof from '../components/Prof/Prof';
 import { ListLink } from '../components/Listlink';
 import { fetchEntries } from '../lib/contentful';
-import dynamic from 'next/dynamic';
-
-const ReactGitHubCalendar = dynamic(() => import('react-ts-github-calendar'), {
-  ssr: false,
-});
+import { GithubCal } from '../components/GithubCal';
 
 export default function Home({ skills }) {
   return (
@@ -25,8 +21,7 @@ export default function Home({ skills }) {
       <Prof />
       <Skills skills={skills} />
       <ListLink />
-
-      <ReactGitHubCalendar userName="kazu-s-1110" responsive />
+      <GithubCal />
     </div>
   );
 }

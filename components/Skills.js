@@ -15,7 +15,7 @@ export const Skills = ({ skills }) => {
         <Text fontSize={{ base: '1em', md: '20px' }}>（Not master）</Text>
       </Text>
       <Grid
-        templateColumns={{ base: 'repeat(2, 1fr)', md: 'repeat(7, 1fr)' }}
+        templateColumns={{ base: 'repeat(2, 1fr)', md: 'repeat(6, 1fr)' }}
         gap={6}
       >
         {skills?.map((skill) => {
