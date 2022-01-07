@@ -11,7 +11,8 @@ export const Skills = ({ skills }) => {
         fontSize={{ base: '2em', md: '30px' }}
         fontWeight={{ base: '400', md: '500' }}
       >
-        My Skills<span>（Not master）</span>
+        My Skills
+        <Text fontSize={{ base: '1em', md: '20px' }}>（Not master）</Text>
       </Text>
       <Grid
         templateColumns={{ base: 'repeat(2, 1fr)', md: 'repeat(7, 1fr)' }}
