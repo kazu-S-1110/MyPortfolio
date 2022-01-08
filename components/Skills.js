@@ -1,11 +1,11 @@
-import { Grid, Flex, Text } from '@chakra-ui/react';
+import { Grid, Flex, Text, Box, Container } from '@chakra-ui/react';
 import styled from 'styled-components';
 import { Skill } from './Skill';
 
 export const Skills = ({ skills }) => {
   // console.log(skills);
   return (
-    <Div>
+    <Box w="100vw" borderBottom="3px solid blue" p="5">
       <Text
         textAlign="center"
         fontSize={{ base: '2em', md: '30px' }}
@@ -26,7 +26,7 @@ export const Skills = ({ skills }) => {
           );
         })}
       </Grid>
-    </Div>
+    </Box>
   );
 };
 

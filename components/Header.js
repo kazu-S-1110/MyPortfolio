@@ -6,10 +6,10 @@ export const Header = () => {
     <Head>
       <Title>My Portfolio</Title>
       <Box alignSelf="center" display="flex" min-height="17px">
-        <Link href="https://github.com/kazu-S-1110/" isExternal>
+        <Link href="https://github.com/kazu-S-1110/" isExternal mr={'3'}>
           <Image src="./github-icon-1.svg" boxSize="40px" m="2px" />
         </Link>
-        <Link href="https://twitter.com/posekaz61110" isExternal>
+        <Link href="https://twitter.com/posekaz61110" isExternal mr={'2'}>
           <Image src="./Logo blue.svg" boxSize="40px" m="2px" />
         </Link>
       </Box>
