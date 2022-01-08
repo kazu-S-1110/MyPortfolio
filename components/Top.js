@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import Typewriter from 'typewriter-effect';
 
-export default () => {
+export const Top = () => {
   return (
     <>
       <Con>
@@ -19,6 +19,7 @@ export default () => {
 };
 
 const Con = styled.div`
+  margin-top: 50px;
   background-image: url('/pc.jpg');
   background-color: rgba(255, 255, 255, 0.6);
   background-blend-mode: lighten;
@@ -31,9 +32,10 @@ const Con = styled.div`
   font-size: 50px;
   color: #00eeff;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  margin-top: auto;
+  /* margin-top: auto; */
   text-shadow: 0.02em 0.02em 0.02em rgba(0, 0, 0, 1);
-  @media screen and (max-width: 690px) {
+  @media screen and (max-width: 760px) {
     height: 250px;
+    margin-top: 30px;
   }
 `;
