@@ -4,8 +4,7 @@ import { Header } from '../components/Header';
 import { Skills } from '../components/Skills';
 import { Top } from '../components/Top';
 import Prof from '../components/Prof/Prof';
-import { ListLink } from '../components/Listlink';
-import { fetchEntries } from '../lib/contentful';
+import { fetchEntries, fetchOutputs } from '../lib/contentful';
 import { GithubCal } from '../components/GithubCal';
 
 export default function Home({ skills }) {
@@ -30,7 +29,8 @@ export default function Home({ skills }) {
 export const getServerSideProps = async () => {
   const skills = await fetchEntries();
   // console.log(skills);
-
+  const outputs = await fetchOutputs();
+  console.log(outputs);
   return {
     props: {
       skills,
