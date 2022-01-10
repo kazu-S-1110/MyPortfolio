@@ -1,19 +1,22 @@
-import { Grid, Flex, Text, Box, Container } from '@chakra-ui/react';
-import styled from 'styled-components';
+import { Grid, Flex, Text, Box } from '@chakra-ui/react';
 import { Skill } from './Skill';
 
 export const Skills = ({ skills }) => {
   // console.log(skills);
   return (
     <Box w="100vw" borderBottom="3px solid blue" p="5">
-      <Text
-        textAlign="center"
-        fontSize={{ base: '2em', md: '30px' }}
-        fontWeight={{ base: '400', md: '500' }}
-      >
-        My Skills
-        <Text fontSize={{ base: '1em', md: '20px' }}>（Not master）</Text>
-      </Text>
+      <Flex justify="center" align="center" mb="5">
+        <Box bg="#6df7e7" w="40vw" borderRadius="3xl">
+          <Text
+            textAlign="center"
+            fontSize={{ base: '2em', md: '30px' }}
+            fontWeight={{ base: '400', md: '500' }}
+          >
+            My Skills
+            <Text fontSize={{ base: '1em', md: '20px' }}>（Not master）</Text>
+          </Text>
+        </Box>
+      </Flex>
       <Grid
         templateColumns={{ base: 'repeat(2, 1fr)', md: 'repeat(6, 1fr)' }}
         gap={6}
@@ -29,8 +32,3 @@ export const Skills = ({ skills }) => {
     </Box>
   );
 };
-
-const Div = styled.div`
-  width: 100%;
-  border-bottom: 1px solid blue;
-`;

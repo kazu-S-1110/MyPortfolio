@@ -39,7 +39,6 @@ const Cont = styled.div`
   justify-content: space-evenly;
   align-items: center;
   padding: 50px;
-
   font-size: 17px;
   z-index: 3;
 
@@ -63,7 +62,6 @@ const Img = styled.img`
   width: 200px;
   height: auto;
   margin-right: 50px;
-
   @media screen and (max-width: 690px) {
     margin: 20px auto;
   }

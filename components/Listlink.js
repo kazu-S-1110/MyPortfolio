@@ -1,42 +1,19 @@
-import { Fragment } from 'react';
-import styled from 'styled-components';
+import { Text, SimpleGrid, Flex, Box } from '@chakra-ui/react';
 
-export const ListLink = () => {
+export const ListLink = ({ outputs }) => {
   return (
-    <>
-      <Div>
-        <h1>Links</h1>
-        <A href="https://react-hooks-practice.vercel.app/">Todo-app</A>
-        {/* <object
-          type="image/svg+xml"
-          data="https://gh-card.dev/repos/kazu-S-1110/react-farm_211217.svg?link_target=_blank"
-        ></object> */}
-      </Div>
-    </>
+    <SimpleGrid borderBottom="3px solid blue" w="100%" mt="5">
+      <Flex justify="center" align="center">
+        <Box bg="#6df7e7" w="40vw" borderRadius="3xl">
+          <Text
+            textAlign="center"
+            fontSize={{ base: '2em', md: '30px' }}
+            fontWeight={{ base: '400', md: '500' }}
+          >
+            実際に作ったもの
+          </Text>
+        </Box>
+      </Flex>
+    </SimpleGrid>
   );
 };
-
-const Div = styled.div`
-  color: blue;
-  margin-top: 60px;
-  outline: blue solid 3px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background: #efeef4;
-
-  h1 {
-    color: black;
-  }
-`;
-
-const A = styled.a`
-  font-size: 30px;
-  margin-top: 20px;
-  font-weight: bold;
-  :hover {
-    text-decoration: underline;
-  }
-`;
