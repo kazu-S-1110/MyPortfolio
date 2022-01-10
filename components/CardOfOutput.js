@@ -10,13 +10,12 @@ import {
   PopoverContent,
   PopoverTrigger,
   Text,
-  useDisclosure,
 } from '@chakra-ui/react';
 
 export const CardOfOutput = ({ output }) => {
   return (
     <>
-      <Box bg="#AED6FB" borderRadius="xl">
+      <Box bg="#AED6FB" borderRadius="xl" minHeight="70px" mx="4">
         <Popover>
           <PopoverTrigger>
             <Text

@@ -19,7 +19,7 @@ export const Skills = ({ skills }) => {
         </Box>
       </Flex>
       <Grid
-        templateColumns={{ base: 'repeat(2, 1fr)', md: 'repeat(6, 1fr)' }}
+        templateColumns={{ base: 'repeat(3, 1fr)', md: 'repeat(6, 1fr)' }}
         gap={6}
       >
         {skills?.map((skill) => {

@@ -1,4 +1,4 @@
-import { Collapse, Image, Text, useDisclosure } from '@chakra-ui/react';
+import { Box, Collapse, Image, Text, useDisclosure } from '@chakra-ui/react';
 
 export const Skill = ({ skill }) => {
   const { isOpen, onToggle } = useDisclosure();
@@ -20,7 +20,11 @@ export const Skill = ({ skill }) => {
         onClick={onToggle}
         alt={skill.fields.skillName}
       />
-      <Collapse in={isOpen}>{skill.fields.description}</Collapse>
+      <Collapse in={isOpen}>
+        <Box bg="#AED6FB" borderRadius="xl" p="2" fontSize={'sm'} mt="2">
+          {skill.fields.description}
+        </Box>
+      </Collapse>
     </>
   );
 };
