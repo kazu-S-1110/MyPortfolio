@@ -6,7 +6,7 @@ import { Top } from '../components/Top';
 import Prof from '../components/Prof/Prof';
 import { fetchEntries, fetchOutputs } from '../lib/contentful';
 import { GithubCal } from '../components/GithubCal';
-import { ListLink } from '../components/Listlink';
+import { Outputs } from '../components/Outputs';
 
 export default function Home({ skills, outputs }) {
   return (
@@ -19,7 +19,7 @@ export default function Home({ skills, outputs }) {
       <Top />
       <Prof />
       <Skills skills={skills} />
-      <ListLink outputs={outputs} />
+      <Outputs outputs={outputs} />
       <GithubCal />
     </div>
   );
