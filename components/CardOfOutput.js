@@ -1,12 +1,10 @@
 import {
   Box,
   Button,
-  Collapse,
   Link,
   Popover,
   PopoverArrow,
   PopoverBody,
-  PopoverCloseButton,
   PopoverContent,
   PopoverTrigger,
   Text,
@@ -22,13 +20,13 @@ export const CardOfOutput = ({ output }) => {
               textAlign="center"
               cursor="pointer"
               fontSize={{ base: '20px', md: '24px' }}
+              _hover={{ opacity: '0.5', bg: '#ddedfc' }}
             >
               {output.fields.name}
             </Text>
           </PopoverTrigger>
           <PopoverContent>
             <PopoverArrow />
-            <PopoverCloseButton />
             <PopoverBody>{output.fields.description}</PopoverBody>
           </PopoverContent>
           {output.fields.url && (

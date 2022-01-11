@@ -18,6 +18,8 @@ export const Skill = ({ skill }) => {
         boxSize="150px"
         src={`http:${skill.fields.skillImage.fields.file.url}`}
         onClick={onToggle}
+        cursor="pointer"
+        _hover={{ opacity: '0.6' }}
         alt={skill.fields.skillName}
       />
       <Collapse in={isOpen}>
