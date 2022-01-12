@@ -7,23 +7,35 @@ import {
   PopoverBody,
   PopoverContent,
   PopoverTrigger,
+  Tooltip,
   Text,
 } from '@chakra-ui/react';
 
 export const CardOfOutput = ({ output }) => {
   return (
     <>
-      <Box bg="#AED6FB" borderRadius="xl" minHeight="70px" mx="4">
+      <Box
+        bg="#AED6FB"
+        borderRadius="xl"
+        minHeight="70px"
+        boxShadow={'xl'}
+        mx="4"
+        display="flex"
+        flexDirection="column"
+      >
         <Popover>
           <PopoverTrigger>
-            <Text
-              textAlign="center"
-              cursor="pointer"
-              fontSize={{ base: '20px', md: '24px' }}
-              _hover={{ opacity: '0.5', bg: '#ddedfc' }}
-            >
-              {output.fields.name}
-            </Text>
+            <Tooltip label="click to display description">
+              <Text
+                textAlign="center"
+                cursor="pointer"
+                fontSize={{ base: '14px', md: '20px' }}
+                borderRadius={'xl'}
+                _hover={{ opacity: '0.5', bg: '#ddedfc' }}
+              >
+                {output.fields.name}
+              </Text>
+            </Tooltip>
           </PopoverTrigger>
           <PopoverContent>
             <PopoverArrow />
