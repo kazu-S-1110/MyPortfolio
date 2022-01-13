@@ -21,7 +21,6 @@ export const CardOfOutput = ({ output }) => {
         borderRadius="xl"
         minHeight="70px"
         boxShadow={'xl'}
-        mx="10"
         justifyContent="center"
         display="flex"
         flexDir="column"
@@ -48,7 +47,7 @@ export const CardOfOutput = ({ output }) => {
           templateRows="repeat(1, 1fr)"
           templateColumns="repeat(1, 1fr)"
           mb="4"
-          mx="5"
+          mx={{ base: '1', md: '4' }}
           gap="5"
           placeItems="center"
         >
