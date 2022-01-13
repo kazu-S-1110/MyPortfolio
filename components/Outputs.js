@@ -6,7 +6,12 @@ export const Outputs = ({ outputs }) => {
     <>
       <Box borderBottom="3px solid blue" w="100%" mt="5">
         <Flex justify="center" align="center" flexDirection="column" mb="5">
-          <Box bg="#b8faf2" w={{ base: '50vw', md: '30vw' }} borderRadius="xl">
+          <Box
+            bg="#b8faf2"
+            w={{ base: '50vw', md: '30vw' }}
+            borderRadius="xl"
+            p="2"
+          >
             <Text
               textAlign="center"
               fontSize={{ base: '23px', md: '28px' }}
@@ -27,6 +32,7 @@ export const Outputs = ({ outputs }) => {
           minChildWidth={{ base: '40vw', md: '27vw' }}
           spacing={10}
           mb="4"
+          mx="4"
         >
           {outputs?.map((output) => {
             return <CardOfOutput key={output.sys.id} output={output} />;
