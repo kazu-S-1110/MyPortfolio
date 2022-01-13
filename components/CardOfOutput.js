@@ -46,7 +46,7 @@ export const CardOfOutput = ({ output }) => {
         </Popover>
         <Grid
           templateRows="repeat(1, 1fr)"
-          templateColumns="repeat(2, 1fr)"
+          templateColumns="repeat(1, 1fr)"
           mb="4"
           mx="5"
           gap="5"
@@ -61,7 +61,7 @@ export const CardOfOutput = ({ output }) => {
               </Link>
             </GridItem>
           )}
-          <GridItem colStart="2">
+          <GridItem>
             <Link href={output.fields.repo} isExternal>
               <Button
                 colorScheme="facebook"
