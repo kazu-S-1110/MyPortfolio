@@ -29,7 +29,7 @@ export const Outputs = ({ outputs }) => {
           </Text>
         </Flex>
         <SimpleGrid
-          minChildWidth={{ base: '40vw', md: '27vw' }}
+          minChildWidth={{ base: '50vw', md: '30vw' }}
           spacing={10}
           mb="4"
           mx="4"
