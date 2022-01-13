@@ -6,10 +6,10 @@ const ReactGitHubCalendar = dynamic(() => import('react-ts-github-calendar'), {
 });
 
 export const GithubCal = () => {
-  const [isLargerThan640] = useMediaQuery('(min-width:640px)');
+  const [isLargerThan690] = useMediaQuery('(min-width:690px)');
   return (
-    <Box p="4">
-      {isLargerThan640 ? (
+    <Box p="4" mx="4">
+      {isLargerThan690 ? (
         <ReactGitHubCalendar userName="kazu-s-1110" />
       ) : (
         <ReactGitHubCalendar userName="kazu-s-1110" responsive />

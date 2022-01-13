@@ -21,7 +21,7 @@ export const CardOfOutput = ({ output }) => {
         borderRadius="xl"
         minHeight="70px"
         boxShadow={'xl'}
-        mx="4"
+        mx="10"
         justifyContent="center"
         display="flex"
         flexDir="column"
@@ -31,7 +31,7 @@ export const CardOfOutput = ({ output }) => {
             <Text
               textAlign="center"
               cursor="pointer"
-              fontSize={{ base: '14px', md: '20px' }}
+              fontSize={{ base: '18px', md: '22px' }}
               borderRadius={'xl'}
               _hover={{ opacity: '0.5', bg: '#ddedfc' }}
               mb="5"
@@ -48,7 +48,9 @@ export const CardOfOutput = ({ output }) => {
           templateRows="repeat(1, 1fr)"
           templateColumns="repeat(2, 1fr)"
           mb="4"
-          mx="3"
+          mx="5"
+          gap="5"
+          placeItems="center"
         >
           {output.fields.url && (
             <GridItem>
@@ -67,6 +69,17 @@ export const CardOfOutput = ({ output }) => {
                 cursor="pointer"
               >
                 Repository
+              </Button>
+            </Link>
+          </GridItem>
+          <GridItem>
+            <Link href={output.fields.refUrl} isExternal>
+              <Button
+                colorScheme="linkedin"
+                justifySelf="center"
+                cursor="pointer"
+              >
+                参考にした資料
               </Button>
             </Link>
           </GridItem>
