@@ -89,6 +89,7 @@ export const CardOfOutput = ({ output }) => {
                 src={`http:${output.fields.image.fields.file.url}`}
                 alt={output.fields.image.fields.file.title}
                 style={{ filter: 'blur(0.9px)' }}
+                boxSize={{ base: '180px', md: '240px' }}
               />
             </GridItem>
           )}

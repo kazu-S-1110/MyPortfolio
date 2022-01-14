@@ -32,7 +32,7 @@ export const Outputs = ({ outputs }) => {
           minChildWidth={{ base: '50vw', md: '30vw' }}
           spacing={10}
           mb="4"
-          mx="4"
+          mx="7"
         >
           {outputs?.map((output) => {
             return <CardOfOutput key={output.sys.id} output={output} />;
