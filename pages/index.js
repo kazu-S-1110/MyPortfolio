@@ -7,6 +7,8 @@ import Prof from '../components/Prof/Prof';
 import { fetchEntries, fetchOutputs } from '../lib/contentful';
 import { GithubCal } from '../components/GithubCal';
 import { Outputs } from '../components/Outputs';
+import { Container } from '@chakra-ui/react';
+import { Footer } from '../components/Footer';
 
 export default function Home({ skills, outputs }) {
   return (
@@ -16,11 +18,14 @@ export default function Home({ skills, outputs }) {
         <link rel="icon" href="/desktop-computer_1f5a5.png" />
       </Head>
       <Header />
-      <Top />
-      <Prof />
-      <Skills skills={skills} />
-      <Outputs outputs={outputs} />
-      <GithubCal />
+      <Container maxW="container.xl">
+        <Top />
+        <Prof />
+        <Skills skills={skills} />
+        <GithubCal />
+        <Outputs outputs={outputs} />
+        <Footer />
+      </Container>
     </div>
   );
 }

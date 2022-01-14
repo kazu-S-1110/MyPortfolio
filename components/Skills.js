@@ -5,7 +5,7 @@ export const Skills = ({ skills }) => {
   // console.log(skills);
 
   return (
-    <Box w="100vw" borderBottom="3px solid blue" p="5">
+    <Box borderBottom="3px solid blue" p="5">
       <Flex justify="center" align="center" mb="5">
         <Box bg="#b8faf2" w="40vw" borderRadius="xl">
           <Text

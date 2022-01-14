@@ -8,7 +8,14 @@ const ReactGitHubCalendar = dynamic(() => import('react-ts-github-calendar'), {
 export const GithubCal = () => {
   const [isLargerThan690] = useMediaQuery('(min-width:690px)');
   return (
-    <Flex p="4" mx="4" flexDirection="column" justify="center" align="center">
+    <Flex
+      p="4"
+      mx="4"
+      flexDirection="column"
+      justify="center"
+      align="center"
+      borderBottom="3px solid blue"
+    >
       <Box
         bg="#b8faf2"
         w={{ base: '50vw', md: '30vw' }}
@@ -16,7 +23,11 @@ export const GithubCal = () => {
         mb="3"
         p="2"
       >
-        <Text textAlign="center" fontSize={{ base: '23px', md: '28px' }}>
+        <Text
+          textAlign="center"
+          fontSize={{ base: '23px', md: '28px' }}
+          fontWeight={{ base: '400', md: '500' }}
+        >
           GitHub Contributions
         </Text>
       </Box>
