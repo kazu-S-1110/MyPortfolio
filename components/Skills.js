@@ -1,4 +1,4 @@
-import { Grid, Flex, Text, Box } from '@chakra-ui/react';
+import { Grid, Flex, Text, Box, SimpleGrid } from '@chakra-ui/react';
 import { Skill } from './Skill';
 
 export const Skills = ({ skills }) => {
@@ -18,10 +18,7 @@ export const Skills = ({ skills }) => {
           </Text>
         </Box>
       </Flex>
-      <Grid
-        templateColumns={{ base: 'repeat(3, 1fr)', md: 'repeat(6, 1fr)' }}
-        gap={6}
-      >
+      <SimpleGrid minChildWidth={{ base: '140px', md: '200px' }} spacing="4">
         {skills?.map((skill) => {
           return (
             <Flex direction="column" alignItems="center" key={skill.sys.id}>
@@ -29,7 +26,7 @@ export const Skills = ({ skills }) => {
             </Flex>
           );
         })}
-      </Grid>
+      </SimpleGrid>
     </Box>
   );
 };
