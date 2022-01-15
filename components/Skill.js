@@ -1,4 +1,13 @@
-import { Box, Collapse, Image, Text, useDisclosure } from '@chakra-ui/react';
+import {
+  Box,
+  Button,
+  Collapse,
+  Flex,
+  Image,
+  Link,
+  Text,
+  useDisclosure,
+} from '@chakra-ui/react';
 
 export const Skill = ({ skill }) => {
   const { isOpen, onToggle } = useDisclosure();
@@ -23,9 +32,16 @@ export const Skill = ({ skill }) => {
         alt={skill.fields.skillName}
       />
       <Collapse in={isOpen}>
-        <Box bg="#AED6FB" borderRadius="xl" p="2" fontSize={'sm'} mt="2">
-          {skill.fields.description}
-        </Box>
+        <Flex flexDirection="column" justify="center" align="center">
+          <Box bg="#AED6FB" borderRadius="xl" p="2" fontSize={'sm'} mt="2">
+            {skill.fields.description}
+          </Box>
+          {skill.fields.url && (
+            <Link href={skill.fields.url} isExternal>
+              <Button colorScheme="messenger">公式サイト</Button>
+            </Link>
+          )}
+        </Flex>
       </Collapse>
     </>
   );
