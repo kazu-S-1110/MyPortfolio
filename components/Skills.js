@@ -18,7 +18,7 @@ export const Skills = ({ skills }) => {
           </Text>
         </Box>
       </Flex>
-      <SimpleGrid minChildWidth={{ base: '140px', md: '200px' }} spacing="4">
+      <SimpleGrid minChildWidth={{ base: '140px', md: '200px' }} spacing="5">
         {skills?.map((skill) => {
           return (
             <Flex direction="column" alignItems="center" key={skill.sys.id}>

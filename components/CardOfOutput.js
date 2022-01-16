@@ -7,11 +7,12 @@ import {
   PopoverBody,
   PopoverContent,
   PopoverTrigger,
-  Image,
+  // Image,
   Text,
   Grid,
   GridItem,
 } from '@chakra-ui/react';
+import Image from 'next/image';
 
 export const CardOfOutput = ({ output }) => {
   // const imageName = output.fields.image.fields.file.title;
@@ -88,8 +89,8 @@ export const CardOfOutput = ({ output }) => {
               <Image
                 src={`http:${output.fields.image.fields.file.url}`}
                 alt={output.fields.image.fields.file.title}
-                style={{ filter: 'blur(0.9px)' }}
-                boxSize={{ base: '180px', md: '240px' }}
+                width="200px"
+                height="200px"
               />
             </GridItem>
           )}
